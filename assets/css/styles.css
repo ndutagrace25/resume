@@ -1,0 +1,90 @@
+/* @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap");
+
+html,
+body {
+  font-family: "Quicksand", sans-serif !important;
+  height: 100%;
+  margin: 0;
+  font-size: small;
+}
+
+body::-webkit-scrollbar {
+  background-color: #e0e0e0;
+  display: none;
+}
+
+.header {
+  background-color: rgba(242, 245, 251, 255);
+  color: rgba(65, 53, 120, 255);
+}
+h6 {
+  font-weight: bold;
+  color: rgba(65, 53, 120, 255);
+}
+
+h5 {
+  color: rgba(65, 53, 120, 255);
+}
+.identifier {
+  color: rgba(65, 53, 120, 255);
+  font-weight: bold;
+}
+.skill {
+  font-weight: bold;
+  color: #9caedb;
+}
+
+@media only screen and (max-width: 360px) {
+  .language-skill {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .language {
+    width: 100% !important;
+    /* columns: 12; */
+  }
+  .skills {
+    margin-left: 5px !important;
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .on-skill {
+    width: 100% !important;
+  }
+  .change {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    border-bottom: black !important;
+    border-width: 2px !important;
+    margin-bottom: 10px !important;
+  }
+  .topic {
+    border: none !important;
+  }
+}
+
+@media print {
+  .on-skill {
+    width: 100% !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .skill-title {
+    width: 100% !important;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    /* margin-left: 10px !important; */
+  }
+
+}
